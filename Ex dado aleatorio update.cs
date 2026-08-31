@@ -1,4 +1,6 @@
-﻿Random dice = new Random();
+using System;
+
+Random dice = new Random();
 
 int roll1 = dice.Next(1, 7);
 int roll2 = dice.Next(1, 7);
