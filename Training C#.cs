@@ -55,3 +55,30 @@ class Fatorial
     }
 }
 #endregion
+
+#region Ex04
+using System;
+
+class Fatorial
+{
+    static int CalcularFatorial(int n)
+    {
+        if (n == 1)
+        {
+            return 1;
+        }
+        else
+        {
+            return n * CalcularFatorial(n - 1);
+        }
+    }
+
+    static void Main()
+    {
+        Console.WriteLine("Digite um número: ");
+        int n = int.Parse(Console.ReadLine());
+
+        Console.WriteLine(CalcularFatorial(n));
+    }
+}
+#endregion
